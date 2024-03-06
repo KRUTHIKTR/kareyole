@@ -9,6 +9,8 @@ const dotenv = require("dotenv");
 const { access } = require("fs");
 dotenv.config();
 
+
+
 const pool = mysql.createPool({
   host: 'localhost',
   port: process.env.PORTNUM,       
@@ -56,3 +58,15 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log('Server is running on port 8080')
 })
+
+
+
+// const express=require('express');
+// const app=express();
+// const port=process.env.PORT||3000;
+//app.set('view engine','ejs' );
+// //home route
+// app.get('/',(req,res)=>{
+//   res.render('login',{title: 'Login Page'});
+//   });
+//app.listen(port,()=>{console.log(`Listening at http://localhost:3000')});
