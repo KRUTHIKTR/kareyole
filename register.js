@@ -15,7 +15,7 @@ const pool = mysql.createPool({
   database: 'users' 
 });
 
-app.post('frontend/register/register/register.html', (req, res) => {
+app.post('frontend/register/register.html', (req, res) => {
   const { name, email, password } = req.body;
 
   // Check if the email already exists
