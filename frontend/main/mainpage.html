@@ -22,8 +22,8 @@
                     </select>
                 </div>
                 <div class="service">
-                    <p id="login-btn"><a href="#">Login</a></p>
-                    <button id="explore-btn">Sign up</button>
+                    <p id="login-btn"><a href="../login/login.html">Login</a></p>
+                    <a href="../register/register.html"><button id="explore-btn">Sign up</button></a>
                 </div>
             </div>
             <div id="firstcontent">
@@ -33,7 +33,7 @@
                     <p class="sub-heading">More than an invite,a celebration journey,start the magic,<br>share the story and go digital</p>
                 </div>
                 <div id="explore-section">
-                    <a href="#" class="explore-templates-btn">Explore Templates</a>
+                    <a href="../login/login.html" class="explore-templates-btn">Explore Templates</a>
                 </div>
                 <div id="wedding-img">
                     <img src="images/Indian wedding-bro 1.png" id="wedding-png" alt="">
@@ -156,7 +156,7 @@
                     <div class="how-it-works-links-box">
                         <h3 class="how-it-works-subtitle">Get full assistance from us!</h3>
                         <!-- <a href="#" class="how-it-works-link">Explore Templates -></a>  -->
-                        <a href="#" class="how-it-works-btn">Get Free Demo</a>
+                        <a href="../login/login.html" class="how-it-works-btn">Get Free Demo</a>
                         <!-- <div class="how-it-works-img">
                             <img src="" alt="">
                         </div> -->
@@ -177,20 +177,25 @@
                         submit your details and the type of event and project that you want us to design for <br> you.we will get in touch with you soon to understand your requirements and help <br> you make magical invitations for your events.
                     </div>
                 </div>
-                <div class="contact-container">
-                    <div class="contact-name">
-                        <input type="text" placeholder="Full Name">
+                <form action="/contact_us" method="post">
+                    <div class="contact-container">
+                        
+                        <div class="contact-name">
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="contact-phone-number">
+                            <input type="number" placeholder="Phone Number">
+                        </div>
+                        <div class="contact-message">
+                            <input type="text" placeholder="Message">
+                        </div>
+                        <div class="contact-submit-btn">
+                            <button class="submit-btn">Submit</button>
+                        </div>
                     </div>
-                    <div class="contact-phone-number">
-                        <input type="number" placeholder="Phone Number">
-                    </div>
-                    <div class="contact-message">
-                        <input type="text" placeholder="Message (optional)">
-                    </div>
-                    <div class="contact-submit-btn">
-                        <button class="submit-btn">Submit</button>
-                    </div>
-                </div>
+                </form>
+                
+                
             </div>
         </section>
         <section class="footer">

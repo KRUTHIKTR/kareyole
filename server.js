@@ -28,6 +28,24 @@ app.use(cookie());
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
+// Under test
+// Contact us part 
+app.post('/contact_us', (req, res) => {
+  const { name, email, message } = req.body;
+
+  connection.query(
+      'INSERT INTO contact_us (name, email, message) VALUES (?, ?, ?)',
+      [name, email, message],
+      (err, result) => {
+          if (err) {
+              console.error(err);
+              res.status(500).send('Error storing data');
+          } else {
+              res.send('Data stored successfully');
+          }
+      }
+  );
+});
 // Above ok below don't know no idea what to do
 
 app.use(express.json())
@@ -50,6 +68,12 @@ app.post("/notes", async (req, res) => {
 })
 
 
+<<<<<<< HEAD
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+=======
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send('Something broke 💩')
@@ -70,7 +94,11 @@ app.listen(8080, () => {
 //   res.render('login',{title: 'Login Page'});
 //   });
 //app.listen(port,()=>{console.log(`Listening at http://localhost:3000')});
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> a1e744ba511a06131a8eaa1f0b26c61bc2ded6ce
+>>>>>>> 5530b532ea2c0eac99054d885ce648e0e7e9bc71
