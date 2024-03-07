@@ -9,13 +9,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const pool = mysql.createPool({
-  host: 'localhost', // Replace 'localhost' with your MySQL host
+  host: 'localhost:3306', // Replace 'localhost' with your MySQL host
   user: 'root',      // Replace 'root' with your MySQL username
-  password: 'password',  // Replace 'password' with your MySQL password
+  password: 'Password',  // Replace 'password' with your MySQL password
   database: 'users' 
 });
 
-app.post('frontend/register/register/register.html', (req, res) => {
+app.post('/register', (req, res) => {
   const { name, email, password } = req.body;
 
   // Check if the email already exists

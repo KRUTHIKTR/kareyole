@@ -17,7 +17,7 @@ const pool = mysql.createPool({
 });
 
 
-app.post('frontend/login/login/login.html', (req, res) => {
+app.post('\login', (req, res) => {
   const { email, password } = req.body;
 
   // Query to check if the user exists with provided email and password
