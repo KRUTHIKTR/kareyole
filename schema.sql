@@ -7,6 +7,7 @@ user_id varchar(30),
 username char(20),
 password varchar(15),
 primary key(user_id));
+select * from USERS;
 
 CREATE TABLE IF NOT EXISTS TEMPLATES(
 template_id varchar(10),
