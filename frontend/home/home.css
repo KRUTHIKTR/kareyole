@@ -155,32 +155,135 @@ body{
     color: white;
     font-size: 20px;
 }
-
-.floral-images{
+#second-section{
+    height: 750px;
+}
+.card-container{
     display: flex;
-    /* justify-content: space-evenly; */
-    z-index: -2;
-    gap: 66rem;
-}
-.floral-left {
-    left: 0;
-}
-.floral-right img{ 
-    right: 0;
+    justify-content: center;
 }
 .info-cards{
-    position: absolute;
-    z-index: 2;
     display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    gap: 2rem;
+    margin-top: 20px;
 }
 .bride-card-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* position: absolute; */
+    /* justify-content: center; */
 }
-.bride-card-title{
+.bride-card-title p{
     color: #A60035;
+    font-size: 30px;
+    /* align-items: center; */
 }
 .bride-card{
+    height: 550px;
+    width: 400px;
     background-color: #A60035;
-    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bride-img img{
+    height: 280px;
+    margin: 10px;
+    /* overflow: hidden; */
+}
+.bride-name p{
+    color: white;
+    /* align-items: center; */
+    font-size: 30px;
+}
+.bride-parent-name p{
+    color: white;
+    /* align-items: center; */
+    font-size: 15px;
+    margin: 0;
+    /* gap: 2rem; */
+}
+.bride-info p{
+    color: white;
+    /* word-wrap:break-word; */
+    justify-content: center;
+    margin: 80px 30px 30px 30px;
+    /* align-items: center; */
+}
+.groom-card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.groom-card-title p{
+    color: #A60035;
+    font-size: 30px;
+}
+.groom-card{
+    height: 550px;
+    width: 400px;
+    background-color: #A60035;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.groom-img img{
+    height: 280px;
+    margin: 10px;
+    /* overflow: hidden; */
+}
+.groom-name p{
+    color: white;
+    /* align-items: center; */
+    font-size: 30px;
+}
+.groom-parent-name p{
+    color: white;
+    /* align-items: center; */
+    font-size: 15px;
+    margin: 0;
+    /* gap: 2rem; */
+}
+.groom-info p{
+    color: white;
+    /* word-wrap:break-word; */
+    justify-content: center;
+    margin: 80px 30px 30px 30px;
+    /* align-items: center; */
+}
+.floral-section{
+    position: absolute;
+    display: flex;
+    gap: 71.3rem;
+    margin-top: 135px;
+    /* height: 400px; */
+}
+.floral-left-image{
+    height: 500px;
+}
+.floral-right-image{
+    height: 500px;
+}
+.more-info-btn-section{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.more-info-btn a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #A60035;
+    width: 250px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
