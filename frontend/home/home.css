@@ -16,6 +16,21 @@ body{
     flex-direction: column;
     align-items: center;
     /* height: 800px; */
+    /* margin-top: 60px; */
+}
+.dashboard-btn a{
+    background-color: #A60035;
+    display: flex;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    width: 120px;
+    margin: 35px 0 0 70px;
+    position: absolute;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 8px;
 }
 .first-container{
     display: flex;
@@ -48,7 +63,7 @@ body{
 }
 .main-img{
    /* height: 200px; */
-   margin-top: 30px;
+   margin-top: 50px;
    /* background: url(images/home-inv.png) no-repeat center; */
    
    /* z-index: 20px; */
@@ -99,6 +114,7 @@ body{
 .timer{
     display: flex;
     gap: 10rem;
+    margin-top: 40px;
 }
 .days{
     display: flex;
@@ -212,7 +228,7 @@ body{
     color: white;
     /* word-wrap:break-word; */
     justify-content: center;
-    margin: 80px 30px 30px 30px;
+    margin: 50px 30px 30px 30px;
     /* align-items: center; */
 }
 .groom-card-section{
@@ -254,7 +270,7 @@ body{
     color: white;
     /* word-wrap:break-word; */
     justify-content: center;
-    margin: 80px 30px 30px 30px;
+    margin: 50px 30px 30px 30px;
     /* align-items: center; */
 }
 .floral-section{
@@ -273,7 +289,7 @@ body{
 .more-info-btn-section{
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 120px;
 }
 .more-info-btn a{
     font-size: 20px;
