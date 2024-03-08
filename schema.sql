@@ -74,4 +74,3 @@ status char(10),
 primary key(payid),
 foreign key(user_id)references USERS(user_id),
 foreign key(invitation_id)references INVITATIONS(invitation_id));
-

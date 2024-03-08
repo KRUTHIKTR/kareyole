@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const pool = mysql.createPool({
   host: 'localhost', // Replace 'localhost' with your MySQL host
   user: 'root',      // Replace 'root' with your MySQL username
-  password: 'password',  // Replace 'password' with your MySQL password
-  database: 'users' 
+  password: 'gagan@123',  // Replace 'password' with your MySQL password
+  database: 'kareyoledb' 
 });
 
 
