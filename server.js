@@ -85,15 +85,7 @@ app.listen(8080, () => {
 
 
 
-// const express=require('express');
-// const app=express();
-// const port=process.env.PORT||3000;
-//app.set('view engine','ejs' );
-// //home route
-// app.get('/',(req,res)=>{
-//   res.render('login',{title: 'Login Page'});
-//   });
-//app.listen(port,()=>{console.log(`Listening at http://localhost:3000')});
+
 <<<<<<< HEAD
 
 

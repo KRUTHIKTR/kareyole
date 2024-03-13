@@ -2,22 +2,22 @@ const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 
-
 const app = express();
+app.use(express.static(path.join(__dirname, 'login')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const pool = mysql.createPool({
-  host: 'localhost', // Replace 'localhost' with your MySQL host
-  user: 'root',      // Replace 'root' with your MySQL username
-  password: 'gagan@123',  // Replace 'password' with your MySQL password
-  database: 'kareyoledb' 
+  host: 'localhost', 
+  user: 'root',
+  password: 'password',
+  database: 'kareyole' 
 });
 
 
-app.post('\login', (req, res) => {
+app.post('/login', (req, res) => {
   const { email, password } = req.body;
 
   // Query to check if the user exists with provided email and password
