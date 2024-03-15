@@ -18,8 +18,13 @@ body{
 .options-section{
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 6rem;
     margin-top: 60px;
+}
+.home-section a{
+    color: #A60035;
+    text-decoration: none;
+    font-size: 30px;
 }
 .about-section a{
     color: #A60035;

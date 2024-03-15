@@ -101,7 +101,7 @@ nav {
     transition: background-color 0.3s, color 0.3s;
   }
   
-  nav li a:hover {
+  /* nav li a:hover {
     background-color: #a60035;
     color: white;
   }
@@ -109,7 +109,7 @@ nav {
   nav li a.active {
     background-color: #a60035;
     color: white;
-  }
+  } */
 
 .main-img{
    /* height: 200px; */
@@ -126,7 +126,7 @@ nav {
 .date-info{
      color: #A60035;
      font-size: 20px;
-     margin-left: 40px;
+     margin-left: 80px;
 }
 .address-info{
     color: #858585;
@@ -144,7 +144,7 @@ nav {
     background-color: #A60035;
     padding: 10px;
     border-radius: 5px;
-    /* margin-left: 60px; */
+    margin-left: 20px;
     /* width: 1000px; */
 }
 .timer-container{
