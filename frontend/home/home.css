@@ -13,6 +13,9 @@ body{
     /* font-family: 'Fair Prosper'; */
 }
 
+.frame{
+    margin-top: 25px;
+}
 /* firstpage section */
 #main-container{
     background-color: white;
@@ -322,7 +325,7 @@ nav {
 .floral-section{
     position: absolute;
     display: flex;
-    gap: 71.3rem;
+    gap: 70.94rem;
     margin-top: 135px;
     /* height: 400px; */
 }
@@ -351,18 +354,389 @@ nav {
     align-items: center;
 }
 #third-section{
-    height: 500px;
+    height: 700px;
     background-color: #A60035;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .kareyole-container-3{
+    position: absolute;
     display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* flex-direction: row; */
-    /* background-color: #A60035; */
+    gap: 25rem;
+}
+.wishes-title-section{
+    display: flex;
+    flex-direction: column;
+}
+.wishes-title p{
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    font-family:cursive;
+}
+.bg-sliders{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.wishes-slider-bride-btn{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishes-slider-bride p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: cursive;
+}
+.wishes-slider-groom-btn{
+    background-color: white;
+    background: transparent;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishes-slider-groom p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: cursive;
+    color: white;
+}
+.wishes-card-section{
+    display: flex;
+    height: 200px;
+    width: 350px;
 }
 .bride-wishes-card{
     background-color: white;
+    height: 320px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 60px;
+}
+.quotation-icon img{
+    height: 50px;
+    margin: 20px 0 0 200px;
+}
+.bride-wishes-content{
+    display: flex;
+    align-items: center;
+}
+.bride-wishes-content p{
+    word-spacing: normal;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.bride-icon{
+    display: flex;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bride-icon-text p{
+    color: #A60035;
+    font-size: 20px
+}
+.slider-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    gap: 2rem;
+}
+.left-btn{
+    background-color: rgba(0, 0, 0,0.6);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-btn{
+    background-color: rgba(0, 0, 0,0.6);
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourth-section{
+    height: 700px;
+}
+.footer-mandala-img{
+    position: absolute;
+    display: flex;
+    gap: 65.02rem;
+    margin-top: 160px;
+}
+.kareyole-container-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.feedback-container{
+    display: flex;
+    flex-direction: column;
+}
+.feedback-title p{
+    color: #A60035;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
+}
+.feedback-options{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* justify-content: center; */
+    align-items: center;
+}
+.feedback-options-title p{
+    color: black;
+    font-size: 20px
+}
+.feedback-option-selectors{
+    display: flex;
+    margin-right: 120px;
+    /* gap: 3rem; */
+}
+.bride-side{
+    background-color: #A60035;
+    text-decoration: none;
+    color: white;
+    width: 170px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.groom-side{
+    background-color: #F7E6EB;
+    text-decoration: none;
+    color: #A60035;
+    width: 150px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    position: absolute;
+    margin-left: 140px
+}
+.feedback-input-container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.fullname-container input{ 
+    background-color: #F7E6EB;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 900;
+    outline: none;
+}
+.message-input input{
+    background-color: #F7E6EB;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    height: 150px;
+    overflow:initial;
+    word-wrap: break-word;
+    border-radius: 10px;
+    font-weight: 900;
+    outline: none;
+    margin-top: 40px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.feedback-submit-btn button{
+    margin-top: 40px;
+    width: 250px;
+    background-color: #A60035;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-weight: 900;
+    cursor: pointer;
+}
+#fifth-section{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 1510px;
+}
+.kareyole-container-5{
+    background-color: #A60035;
+    height: 300px;
+}
+.guidance-section{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 90px;
+}
+.contact-guide-section{
+    display: flex;
+    flex-direction: column;
+}
+.contact-bg{
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 6px;
+}
+.contact-bg img{
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-title p{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 25px;
+    /* justify-content: center; */
+}
+.location-guide-section{
+    display: flex;
+    flex-direction: column;
+}
+.location-bg{
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 6px;
+}
+.location-bg img{
+    justify-content: center;
+    align-items: center;
+
+}
+.location-title p{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 25px;
+    /* justify-content: center; */
+}
+.about-guide-section{
+    display: flex;
+    flex-direction: column;
+}
+.about-bg{
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 6px;
+}
+.about-bg img{
+    justify-content: center;
+    align-items: center;
+
+}
+.about-title p{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 25px;
+    /* justify-content: center; */
+}
+.gallery-guide-section{
+    display: flex;
+    flex-direction: column;
+}
+.gallery-bg{
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 120px;
+    width: 120px;
+    border-radius: 6px;
+}
+.gallery-bg img{
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery-title p{
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    margin-left: 25px;
+    /* justify-content: center; */
+}
+#footer-section{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 30px;
+}
+.kareyole-footer-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.footer-title-section{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 30px;
+}
+.footer-link{
+    margin-top: 28px;
+    /* text-decoration: none; */
+}
+.footer-link a{
+    text-decoration: none;
+    color: #A60035;
+}
+.footer-logo{
+    margin-top: 10px;
+}
+.footer-logo img{
+    height: 150px;
+}
+.footer-mark{
+    margin-top: 8px;
+}
+.footer-mark p{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: cursive;
 }
