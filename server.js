@@ -1,13 +1,14 @@
 const express = require("express");
 const path = require("path");
 const bodyparser = require("body-parser")
-const cookie = require("cookie-parser")
+// const cookie = require("cookie-parser")
 const port = "3000";
 const app = express();
 const mysql = require("mysql2");
 const dotenv = require("dotenv");
 const { access } = require("fs");
 dotenv.config();
+
 
 
 
@@ -20,9 +21,9 @@ const pool = mysql.createPool({
   
 }).promise();
 
-app.use(express.static(path.join(__dirname, "/public/css")));
-app.use(express.static(path.join(__dirname, "/public/js")));
-app.use(express.static(path.join(__dirname, "/public/image")));
+app.use(express.static(path.join(__dirname, "/Public/css")));
+app.use(express.static(path.join(__dirname, "/Public/JS")));
+app.use(express.static(path.join(__dirname, "/Public/image")));
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(cookie());
 app.set("view engine", "ejs");
@@ -68,12 +69,12 @@ app.post("/notes", async (req, res) => {
 })
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
-=======
+// =======
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send('Something broke 💩')
@@ -86,11 +87,11 @@ app.listen(8080, () => {
 
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> a1e744ba511a06131a8eaa1f0b26c61bc2ded6ce
->>>>>>> 5530b532ea2c0eac99054d885ce648e0e7e9bc71
+// =======
+// >>>>>>> a1e744ba511a06131a8eaa1f0b26c61bc2ded6ce
+// >>>>>>> 5530b532ea2c0eac99054d885ce648e0e7e9bc71
