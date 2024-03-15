@@ -5,6 +5,7 @@
       "Source Han Sans CN", sans-serif;
   }
 
+
 body{
     scroll-behavior: smooth;
     margin: 0;
@@ -572,7 +573,7 @@ nav {
     text-align: justify;
     text-justify: inter-word;
 }
-.feedback-submit-btn button{
+.feedback-submit-btn a{
     margin-top: 40px;
     width: 325px;
     background-color: #A60035;
