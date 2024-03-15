@@ -325,7 +325,7 @@ nav {
 .floral-section{
     position: absolute;
     display: flex;
-    gap: 70.94rem;
+    gap: 61.01rem;
     margin-top: 135px;
     /* height: 400px; */
 }
@@ -541,7 +541,7 @@ nav {
 }
 .feedback-input-container{
     position: absolute;
-    margin:300px 0 0 30px;
+    margin:300px 0 0 0;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -551,7 +551,7 @@ nav {
     background-color: #F7E6EB;
     border: none;
     padding: 10px;
-    width: 250px;
+    width: 320px;
     height: 40px;
     border-radius: 10px;
     font-weight: 900;
@@ -561,7 +561,7 @@ nav {
     background-color: #F7E6EB;
     border: none;
     padding: 10px;
-    width: 250px;
+    width: 320px;
     height: 150px;
     overflow:initial;
     word-wrap: break-word;
@@ -574,7 +574,7 @@ nav {
 }
 .feedback-submit-btn button{
     margin-top: 40px;
-    width: 250px;
+    width: 325px;
     background-color: #A60035;
     color: white;
     border: none;
