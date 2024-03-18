@@ -21,7 +21,7 @@ body{
 #main-container{
     position: relative;
     width: 1536px;
-    height: 739px;
+    /* height: 739px; */
     margin: 0 auto;
     background-color: #252525;
     overflow: hidden;
@@ -82,7 +82,10 @@ body{
     border: none;
     z-index: 8;
 }
-
+.rectangle-1  a{
+  text-decoration: none;
+  color: white;
+}
 .rectangle-2{
     position: absolute;
     width: 64px;
@@ -143,7 +146,7 @@ body{
     /* justify-content: space-between; */
     position: relative;
     /* width: 100vw; */
-    height: 739px;
+    /* height: 739px; */
     /* margin: 1px 0 0 0; */
     z-index: 1;
 }

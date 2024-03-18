@@ -574,6 +574,7 @@ nav {
     text-justify: inter-word;
 }
 .feedback-submit-btn a{
+    text-decoration: none;
     margin-top: 40px;
     width: 325px;
     background-color: #A60035;
