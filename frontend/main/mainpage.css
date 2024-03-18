@@ -436,6 +436,11 @@ body{
     padding: 6px;
     margin-top: 2rem;
     cursor: pointer;
+    text-decoration: none;
+}
+.submit-btn a{
+    text-decoration: none;
+    color: white;
 }
 .kareyole-container-5{
     height: 200px;

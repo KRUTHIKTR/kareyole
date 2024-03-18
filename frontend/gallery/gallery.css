@@ -502,3 +502,6 @@
     white-space: nowrap;
     z-index: 44;
   }
+  #footer-link{
+    text-decoration: none   ;
+  }
