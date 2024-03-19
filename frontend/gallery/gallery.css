@@ -71,7 +71,7 @@
     transition: background-color 0.3s, color 0.3s;
   }
   
-  nav li a:hover {
+  /* nav li a:hover {
     background-color: #a60035;
     color: white;
   }
@@ -79,7 +79,7 @@
   nav li a.active {
     background-color: #a60035;
     color: white;
-  }
+  } */
   .flex-row-dcc {
     position: relative;
     width: 1512px;
@@ -501,4 +501,7 @@
     text-align: left;
     white-space: nowrap;
     z-index: 44;
+  }
+  #footer-link{
+    text-decoration: none   ;
   }

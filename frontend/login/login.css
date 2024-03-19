@@ -58,7 +58,7 @@ img {
   position: 10px;
   background-color: #EEDCE1;
   border: 2px solid #EEDCE1;
-  margin: ;
+  /* margin: ; */
   row-gap: 1.25rem;
   backdrop-filter: blur(20px);
   padding: 2rem;
@@ -155,10 +155,17 @@ img {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+.login__button a{
+  text-decoration: none;
+  color: white;
+}
 .login__forgot {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
   color: black;
+  text-decoration: none;
+}
+.register-btn{
   text-decoration: none;
 }
 @media screen and (max-width: 360px) {
