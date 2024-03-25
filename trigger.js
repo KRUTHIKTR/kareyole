@@ -1,14 +1,13 @@
-DELIMITER $$
-
-CREATE TRIGGER update_num_invitations
-AFTER INSERT ON INVITATIONS
+DELIMITER 
+CREATE TRIGGER update_positive_response_count
+AFTER INSERT ON RSVP_RESPONSES
 FOR EACH ROW
 BEGIN
-    UPDATE users
+    UPDATE Positive_Response_Count
     SET num_invitations = (
-        SELECT COUNT(*) FROM INVITATIONS
-        WHERE user_id = NEW.user_id,
-    ) WHERE user_id = NEW.user_id;
-END$$
-
+        SELECT COUNT(*)
+        FROM RSVP_RESPONSES
+        WHERE response_status = 'Attending'
+    );
+END 
 DELIMITER ;
