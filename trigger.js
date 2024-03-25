@@ -1,13 +1,14 @@
-DELIMITER //
+DELIMITER $$
 
-CREATE TRIGGER enforce_age_constraint
-BEFORE INSERT ON tblblooddonars
+CREATE TRIGGER update_num_invitations
+AFTER INSERT ON INVITATIONS
 FOR EACH ROW
 BEGIN
-    IF NEW.Age < 18 OR NEW.Age > 65 THEN
-        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Age must be between 18 and 65';
-    END IF;
-END;
-//
+    UPDATE users
+    SET num_invitations = (
+        SELECT COUNT(*) FROM INVITATIONS
+        WHERE user_id = NEW.user_id,
+    ) WHERE user_id = NEW.user_id;
+END$$
 
-DELIMITER ;
+DELIMITER ;

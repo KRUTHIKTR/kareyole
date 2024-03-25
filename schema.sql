@@ -37,6 +37,16 @@ foreign key(user_id)references USERS(user_id),
 foreign key(template_id)references TEMPLATES(template_id),
 foreign key(customization_id)references CUSTOMIZATION(customization_id));
 
+ALTER TABLE invitations
+ADD COLUMN no_of_invitations INT;
+
+UPDATE invitations
+SET no_of_invitations = (
+    SELECT COUNT(*)
+    FROM invitations
+);
+
+
 
 CREATE TABLE IF NOT EXISTS RSVP_RESPONSES(
 rsvp_id varchar(10),
